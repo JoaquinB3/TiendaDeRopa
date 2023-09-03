@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  background-image: url("https://i0.wp.com/quilhash.com.ar/wp-content/uploads/2022/10/saddsa-2.png?fit=1920%2C5289&ssl=1"); }
+
+.header .banner-header {
+  background-color: #860101;
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header .banner-header .promocion-banner {
+    color: white;
+    text-decoration: none;
+    font-size: .8em; }
+
+.header .container-header {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 70px;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.514);
+  justify-content: space-between; }
+  .header .container-header .container-logo {
+    margin-left: 25px;
+    width: 200px;
+    height: 100%;
+    display: flex; }
+    .header .container-header .container-logo .logo {
+      display: flex; }
+  .header .container-header .container-li {
+    display: flex;
+    margin-right: 50px; }
+    .header .container-header .container-li li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100px; }
+      .header .container-header .container-li li a {
+        text-decoration: none;
+        color: black;
+        position: relative; }
+        .header .container-header .container-li li a::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1.5px;
+          bottom: -5px;
+          background-color: black;
+          left: 0;
+          transform: scaleX(0);
+          transform-origin: bottom left;
+          opacity: 0;
+          transition: transform 600ms ease, opacity 800ms ease; }
+        .header .container-header .container-li li a:hover::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+          opacity: 1; }
+
+#product-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.category_card {
+  width: 350px;
+  height: 300px;
+  margin: 15px; }
+  .category_card a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 300px; }
+    .category_card a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center; }
+    .category_card a h3 {
+      position: absolute;
+      color: white;
+      font-size: 2.5em; }
+
+.button-card {
+  padding: 5px;
+  background-color: rgba(87, 87, 87, 0.473);
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  transition: 300ms ease; }
+  .button-card:hover {
+    background-color: rgba(138, 0, 0, 0.795);
+    color: white;
+    border: none;
+    transition: 300ms ease; }
+
+.section-slide {
+  width: 100%;
+  height: 100vh;
+  background-color: white; }
