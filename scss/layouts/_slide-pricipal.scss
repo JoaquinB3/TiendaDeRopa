@@ -1,5 +1,30 @@
 .section-slide{
     width: 100%;
     height: 100vh;
-    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+ //slide only
+.slide{
+    width: 70%;
+    height: 400px;
+    margin: 50px;
+    .content-slide{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            
+        }
+        p{
+            position: absolute;
+            font-size: 3em;
+        }
+    }
 }
