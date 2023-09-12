@@ -1,6 +1,6 @@
 .header{
     .banner-header{
-        background-color: rgb(134, 1, 1);
+        background-color: black;
         height: 20px;
         width: 100%;
         display: flex;
@@ -41,6 +41,7 @@
                     text-decoration: none;
                     color: black;
                     position: relative;
+                    font-weight: 450;
                     &::after{
                         content: "";
                         position: absolute;

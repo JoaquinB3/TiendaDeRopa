@@ -1,6 +1,6 @@
 .section-slide{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
 }
@@ -46,9 +46,8 @@
 .slick-next:before, .slick-prev:before {
     color:black !important;
     font-size: 50px !important;
-
 }
 
 .slick-prev{
-    left: 0;
+    left: -55px !important;
 }

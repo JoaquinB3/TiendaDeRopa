@@ -7,7 +7,7 @@ body {
   background-image: url("https://i0.wp.com/quilhash.com.ar/wp-content/uploads/2022/10/saddsa-2.png?fit=1920%2C5289&ssl=1"); }
 
 .header .banner-header {
-  background-color: #860101;
+  background-color: black;
   height: 20px;
   width: 100%;
   display: flex;
@@ -44,7 +44,8 @@ body {
       .header .container-header .container-li li a {
         text-decoration: none;
         color: black;
-        position: relative; }
+        position: relative;
+        font-weight: 450; }
         .header .container-header .container-li li a::after {
           content: "";
           position: absolute;
@@ -64,7 +65,7 @@ body {
 
 #product-container {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,9 +109,15 @@ body {
     border: none;
     transition: 300ms ease; }
 
+.separatorX {
+  width: 90%;
+  height: 1.3px;
+  background-color: black;
+  margin: auto; }
+
 .section-slide {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center; }
 
@@ -150,4 +157,26 @@ body {
   font-size: 50px !important; }
 
 .slick-prev {
-  left: 0; }
+  left: -55px !important; }
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px; }
+  .text-container span {
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px soid;
+    font-size: 45px;
+    width: 41ch;
+    animation: typing 2s steps(41), blink 0.5s infinite step-end alternate;
+    overflow: hidden; }
+
+@keyframes typing {
+  from {
+    width: 0; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
