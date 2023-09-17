@@ -2,14 +2,13 @@
     display: flex;
     justify-content: center;
     padding: 50px;
-    span{
+    .typing-text-animation{
         display: block;
         font-family: monospace;
         white-space: nowrap;
         border-right: 4px soid;
         font-size: 45px;    
         width: 41ch;
-
         animation: typing 2s steps(41), blink .5s infinite step-end alternate;
         overflow: hidden;
     }

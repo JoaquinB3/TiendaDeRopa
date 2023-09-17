@@ -163,7 +163,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 50px; }
-  .text-container span {
+  .text-container .typing-text-animation {
     display: block;
     font-family: monospace;
     white-space: nowrap;
