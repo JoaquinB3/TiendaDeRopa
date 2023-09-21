@@ -41,14 +41,39 @@
         <span class="typing-text-animation" id="typing-text" href="">ESTILO EN LA CIUDAD, ACTITUD EN TU CLOSET.</span>
     </div>
     <section class="section-producto">
-        <div class="filtros"></div>
+        <div class="filtros">
+            <div class="container-filtros">
+                <div id="filtro_categoria">
+                    <h2>Prenda</h2>
+                    <a href=""><option value="todas">Quitar filtro</option></a>
+                    <a href=""><option value="camperas">Camperas</option></a>
+                    <a href=""><option value="pantalones">Pantalones</option></a>
+                    <a href=""><option value="remeras">Remeras</option></a>
+                </div>
+                <div class="precio_producto">
+                    <label for="precioMaximo">Precio Máximo:</label>
+                    <input type="number" id="precioMaximo" name="precioMaximo" placeholder="Maximo:">
+                </div>
+                <div id="filtro_marca">
+                    <h2>Marca</h2>
+                    <a href=""><option value="todasMarcas">Quitar filtro</option></a>
+                    <a href=""><option value="nike">Nike</option></a>
+                    <a href=""><option value="adidas">Adidas</option></a>
+                    <a href=""><option value="northf">North Face</option></a>
+                    <a href=""><option value="ripcurl">Ripculr</option></a>
+                    <a href=""><option value="vans">Vans</option></a>
+                    <a href=""><option value="champions">Champions</option></a>
+                    <a href=""><option value="calvin">Calvin Klein</option></a>
+                </div>
+            </div>
+        </div>
         <div id="container-productos"></div>
     </section>
 
 
     <script src="../js/stock.js"></script>
     <script src="../js/products.js"></script>
-    <script src="../js/product_category.js"></script>
+    <script src="../js/filtros.js"></script>
     <script src="../js/titleType.js"></script>
 </body>
 </html>

@@ -1,0 +1,54 @@
+.container-filtros{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 50px;
+    #filtro_categoria{
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+    #filtro_marca{
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+    .precio_producto{
+        display: flex;
+        flex-direction: column;
+        height: 70px;
+        gap: 20px;
+    }
+
+
+    label{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    input{
+        border: none;
+        border-bottom: solid 1px black;
+        background-color: transparent;
+    }
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+    }
+    a{
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        color: black;
+        width: 100px;
+        &:hover{
+            transform: translateX(20px);
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.473);
+        }
+    }
+}
+
