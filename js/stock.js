@@ -1,7 +1,7 @@
 const stock=[
     {
         id:1,
-        categoria:"campera",
+        categoria:"camperas",
         marca:"nike",
         precio:50000,
         stock:5,
@@ -9,7 +9,7 @@ const stock=[
     },
     {   
         id:2,
-        categoria:"campera",
+        categoria:"camperas",
         marca:"adidas",
         precio:48000,
         stock:3,
@@ -17,7 +17,7 @@ const stock=[
     },
     {
         id:3,
-        categoria:"campera",
+        categoria:"camperas",
         marca:"champions",
         precio:55000,
         stock:4,
@@ -25,8 +25,8 @@ const stock=[
     },
     {
         id:4,
-        categoria:"campera",
-        marca:"north-face",
+        categoria:"camperas",
+        marca:"northf",
         precio:70000,
         stock:6,
         img:"https://nikearprod.vtexassets.com/arquivos/ids/532758-1000-1000?v=1779497815&width=1000&height=1000&aspect=true"
@@ -34,7 +34,7 @@ const stock=[
     //pantalones
     {
         id:5,
-        categoria:"pantalon",
+        categoria:"pantalones",
         marca:"nike",
         precio:30000,
         stock:3,
@@ -42,7 +42,7 @@ const stock=[
     },
     {
         id:6,
-        categoria:"pantalon",
+        categoria:"pantalones",
         marca:"adidas",
         precio:43000,
         stock:5,
@@ -50,7 +50,7 @@ const stock=[
     },
     {
         id:7,
-        categoria:"pantalon",
+        categoria:"pantalones",
         marca:"ripcurl",
         precio:25000,
         stock:4,
@@ -58,7 +58,7 @@ const stock=[
     },
     {
         id:8,
-        categoria:"remera",
+        categoria:"remeras",
         marca:"vans",
         precio:48000,
         stock:5,
@@ -66,15 +66,15 @@ const stock=[
     },
     {
         id:9,
-        categoria:"remera",
-        marca:"kalvinclain",
+        categoria:"remeras",
+        marca:"calvin",
         precio:35000,
         stock:2,
         img:"https://calvinargentina.vteximg.com.br/arquivos/ids/185505-320-422/J30J320806_AB0_1.jpg?v=638212322543470000"
     },
     {
         id:10,
-        categoria:"remera",
+        categoria:"remeras",
         marca:"adidas",
         precio:20000,
         stock:3,

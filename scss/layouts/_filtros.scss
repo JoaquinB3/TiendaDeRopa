@@ -44,10 +44,12 @@
         text-decoration: none;
         color: black;
         width: 100px;
+        cursor: pointer;
         &:hover{
-            transform: translateX(20px);
+            transform: translat4eX(20px);
             text-align: center;
             background-color: rgba(0, 0, 0, 0.473);
+            color: white;
         }
     }
 }
