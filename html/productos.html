@@ -45,10 +45,22 @@
             <div class="container-filtros">
                 <div id="filtro_categoria">
                     <h2>Prenda</h2>
-                    <a class="opcion_filtro" value="todasCategorias">Quitar filtro</a>
-                    <a class="opcion_filtro" value="camperas">Camperas</a>
-                    <a class="opcion_filtro" value="pantalones">Pantalones</a>
-                    <a class="opcion_filtro" value="remeras">Remeras</a>
+                    <div class="container-filtro-item">
+                        <input type="checkbox" id="quitarFiltro" class="opcion_filtro" name="categoria" value="todasCategorias">
+                        <label for="quitarFiltro">Quitar filtro</label>
+                    </div>
+                    <div class="container-filtro-item">
+                        <input type="checkbox" id="camperas" class="opcion_filtro" name="categoria" value="camperas">
+                        <label for="camperas">Camperas</label>
+                    </div>
+                    <div class="container-filtro-item">
+                        <input type="checkbox" id="pantalones" class="opcion_filtro" name="categoria" value="camperas">
+                        <label for="pantalones">Pantalones</label>
+                    </div>
+                    <div class="container-filtro-item">
+                        <input type="checkbox" id="remeras" class="opcion_filtro" name="categoria" value="remeras">
+                        <label for="remeras">Remeras</label>
+                    </div>
                 </div>
                 <div class="precio_producto">
                     <label for="precioMaximo">Precio Máximo:</label>
@@ -56,14 +68,38 @@
                 </div>
                 <div id="filtro_marca">
                     <h2>Marca</h2>
-                    <a class="opcion_filtroMarca" value="todasMarcas">Quitar filtro</a>
-                    <a class="opcion_filtroMarca" value="nike">Nike</a>
-                    <a class="opcion_filtroMarca" value="adidas">Adidas</a>
-                    <a class="opcion_filtroMarca" value="northf">North Face</a>
-                    <a class="opcion_filtroMarca" value="ripcurl">Ripculr</a>
-                    <a class="opcion_filtroMarca" value="vans">Vans</a>
-                    <a class="opcion_filtroMarca" value="champions">Champions</a>
-                    <a class="opcion_filtroMarca" value="calvin">Calvin Klein</a>
+                    <div class="container-filtro-item">
+                        <input type="checkbox" id="todasMarcas" class="opcion_filtro" name="marca" value="todasMarcas">
+                        <label for="todasMarcas">Quitar filtro</label>
+                    </div>
+                    <div class="container-filtro-item">
+                        <input type="checkbox" id="nike" class="opcion_filtro" name="marca" value="nike">
+                        <label for="nike">Nike</label>
+                    </div>
+                    <div class="container-filtro-item">
+                        <input type="checkbox" id="adidas" class="opcion_filtro" name="marca" value="adidas">
+                        <label for="adidas">Adidas</label>
+                    </div>
+                    <div class="container-filtro-item">
+                        <input type="checkbox" id="northf" class="opcion_filtro" name="marca" value="northf">
+                        <label for="northf">North Face</label>
+                    </div>
+                    <div class="container-filtro-item">
+                        <input type="checkbox" id="repiculr" class="opcion_filtro" name="marca" value="ripcurl">
+                        <label for="ripcurl">Ripculr</label>
+                    </div>
+                    <div class="container-filtro-item">
+                        <input type="checkbox" id="vans" class="opcion_filtro" name="marca" value="vans">
+                        <label for="vans">Vans</label>
+                    </div>
+                    <div class="container-filtro-item">
+                        <input type="checkbox" id="champions" class="opcion_filtro" name="marca" value="champions">
+                        <label for="champions">Champions</label>
+                    </div>
+                    <div class="container-filtro-item">
+                        <input type="checkbox" id="calvin" class="opcion_filtro" name="marca" value="calvin">
+                        <label for="calvin">Calvin Klein</label>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,5 +111,6 @@
     <script src="../js/cargar-productos.js"></script>
     <script src="../js/aplicar-filtros.js"></script>
     <script src="../js/titleType.js"></script>
+    <script src="../js/item_filtro.js"></script>
 </body>
 </html>

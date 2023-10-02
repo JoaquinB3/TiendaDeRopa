@@ -1,8 +1,7 @@
 // aplico filtros a la categoria
 
-const opcionesFiltroCategoria = document.querySelectorAll(".opcion_filtro");
 const container_producto = document.getElementById('container-productos');
-const opcionesFiltroMarca = document.querySelectorAll(".opcion_filtroMarca");
+const opcionesFiltro = document.querySelectorAll("opcion_filtro");
 
 //filtro por categoria
  
@@ -59,51 +58,43 @@ function aplicarFiltroMarca(marcaSeleccionada) {
   }
 
 
-opcionesFiltroMarca.forEach(opcion => {
-    opcion.addEventListener("click", function(evento) {
-        const valorAtributoMarca = evento.target.getAttribute("value");
+//filtros
 
-        if(valorAtributoMarca === "todasMarcas") {
-            cargarTodosLosProductos();
-        } else {
+opcionesFiltro.forEach(input => {
+    input.addEventListener("change", function(event) {
+        
+        if( input.name === "categoria"){
+            const valorAtributoCategoria = input.value;
+            aplicarFiltroCategoria(valorAtributoCategoria);
+
+        } if( input.name === "marca") {
+            const valorAtributoMarca = input.value;
             aplicarFiltroMarca(valorAtributoMarca);
-        }
-
-    });
-});
-
-opcionesFiltroCategoria.forEach(opcion => {
-    opcion.addEventListener("click", function(event) {
-        const valorAtributo = event.target.getAttribute("value");
-    
-        if (valorAtributo === "todasCategorias") {
-        //si es todos cargo todos los productos
-        cargarTodosLosProductos();
-        } else {
-        // Aplico el filtro con la categoría seleccionada
-        aplicarFiltroCategoria(valorAtributo);
-        }
-
+        }    
   });
 });
 
+
+
+
+
 //chequeo cuantos filtros hay activos
-chequeOpciones.forEach(opcion => {
-    opcion.addEventListener("click", funcion(saberCantidad));
-        const cantidadFiltros = saberCantidad.target.getAttribute("")
-});
+// chequeOpciones.forEach(opcion => {
+//     opcion.addEventListener("click", funcion(saberCantidad));
+//         const cantidadFiltros = saberCantidad.target.getAttribute("")
+// });
 
-function aplicarFiltros(aplicarFiltroCategoria, aplicarFiltroMarca){
+// function aplicarFiltros(aplicarFiltroCategoria, aplicarFiltroMarca){
 
-    stock.forEach( opcion => {
+//     stock.forEach( opcion => {
 
-        if(categoriaSeleccionada === "todasCategorias" || opcion.categoria === categoriaSeleccionada && marcaSeleccionada === "todasMarcas" || opcion.marca === marcaSeleccionada){
-            aplicarFiltroCategoria();
-            aplicarFiltroMarca();
-        }
+//         if(categoriaSeleccionada === "todasCategorias" || opcion.categoria === categoriaSeleccionada && marcaSeleccionada === "todasMarcas" || opcion.marca === marcaSeleccionada){
+//             aplicarFiltroCategoria();
+//             aplicarFiltroMarca();
+//         }
 
-    });
-}
+//     });
+// }
 
 
 
