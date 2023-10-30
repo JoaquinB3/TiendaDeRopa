@@ -9,7 +9,7 @@ function cargarTodosLosProductos() {
     product.innerHTML = `
       <img src=${item.img} class="img-card"/>
       <div class="content-card">
-        <h2>${item.categoria}</h2>
+        <h2>${item.nombre}</h2>
         <h3>${item.marca}</h3>
         <p>$${item.precio}</p>
         <button class="button-card">Agregar al carrito</button>

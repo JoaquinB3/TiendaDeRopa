@@ -46,58 +46,64 @@
                 <div id="filtro_categoria">
                     <h2>Prenda</h2>
                     <div class="container-filtro-item">
-                        <input type="checkbox" id="quitarFiltro" class="opcion_filtro" name="categoria" value="todasCategorias">
+                        <input type="checkbox" id="quitarFiltro" class="opcion_filtro inputInvisible" name="categoria" value="all">
                         <label for="quitarFiltro">Quitar filtro</label>
                     </div>
                     <div class="container-filtro-item">
-                        <input type="checkbox" id="camperas" class="opcion_filtro" name="categoria" value="camperas">
+                        <input type="checkbox" id="camperas" class="opcion_filtro inputInvisible" name="categoria" value="camperas">
                         <label for="camperas">Camperas</label>
                     </div>
                     <div class="container-filtro-item">
-                        <input type="checkbox" id="pantalones" class="opcion_filtro" name="categoria" value="camperas">
+                        <input type="checkbox" id="pantalones" class="opcion_filtro inputInvisible" name="categoria" value="pantalones">
                         <label for="pantalones">Pantalones</label>
                     </div>
                     <div class="container-filtro-item">
-                        <input type="checkbox" id="remeras" class="opcion_filtro" name="categoria" value="remeras">
+                        <input type="checkbox" id="remeras" class="opcion_filtro inputInvisible" name="categoria" value="remeras">
                         <label for="remeras">Remeras</label>
                     </div>
                 </div>
+
                 <div class="precio_producto">
-                    <label for="precioMaximo">Precio Máximo:</label>
-                    <input type="number" id="precioMaximo" name="precioMaximo" placeholder="Maximo:">
-                </div>
+                    <label for="precioPrecio">Precio Minimo:</label>
+                    <input type="range" id="filtroPrecio" class="opcion_filtro" name="precioMin" min="0" max="100000" value="precio" list="valores">
+                    <span id="contadorPrecioMin">0</span>
+                    <label for="precioPrecio">Precio Máximo:</label>
+                    <input type="range" id="filtroPrecio" class="opcion_filtro" name="precioMax" min="0" max="100000" value="precio" list="valores">
+                    <span id="contadorPrecioMax">0</span>
+                </div>  
+
                 <div id="filtro_marca">
                     <h2>Marca</h2>
                     <div class="container-filtro-item">
-                        <input type="checkbox" id="todasMarcas" class="opcion_filtro" name="marca" value="todasMarcas">
+                        <input type="checkbox" id="todasMarcas" class="opcion_filtro inputInvisible" name="marca" value="all">
                         <label for="todasMarcas">Quitar filtro</label>
                     </div>
                     <div class="container-filtro-item">
-                        <input type="checkbox" id="nike" class="opcion_filtro" name="marca" value="nike">
+                        <input type="checkbox" id="nike" class="opcion_filtro inputInvisible" name="marca" value="nike">
                         <label for="nike">Nike</label>
                     </div>
                     <div class="container-filtro-item">
-                        <input type="checkbox" id="adidas" class="opcion_filtro" name="marca" value="adidas">
+                        <input type="checkbox" id="adidas" class="opcion_filtro inputInvisible" name="marca" value="adidas">
                         <label for="adidas">Adidas</label>
                     </div>
                     <div class="container-filtro-item">
-                        <input type="checkbox" id="northf" class="opcion_filtro" name="marca" value="northf">
+                        <input type="checkbox" id="northf" class="opcion_filtro inputInvisible" name="marca" value="northf">
                         <label for="northf">North Face</label>
                     </div>
                     <div class="container-filtro-item">
-                        <input type="checkbox" id="repiculr" class="opcion_filtro" name="marca" value="ripcurl">
+                        <input type="checkbox" id="repiculr" class="opcion_filtro inputInvisible" name="marca" value="ripcurl">
                         <label for="ripcurl">Ripculr</label>
                     </div>
                     <div class="container-filtro-item">
-                        <input type="checkbox" id="vans" class="opcion_filtro" name="marca" value="vans">
+                        <input type="checkbox" id="vans" class="opcion_filtro inputInvisible" name="marca" value="vans">
                         <label for="vans">Vans</label>
                     </div>
                     <div class="container-filtro-item">
-                        <input type="checkbox" id="champions" class="opcion_filtro" name="marca" value="champions">
+                        <input type="checkbox" id="champions" class="opcion_filtro inputInvisible" name="marca" value="champions">
                         <label for="champions">Champions</label>
                     </div>
                     <div class="container-filtro-item">
-                        <input type="checkbox" id="calvin" class="opcion_filtro" name="marca" value="calvin">
+                        <input type="checkbox" id="calvin" class="opcion_filtro inputInvisible" name="marca" value="calvin">
                         <label for="calvin">Calvin Klein</label>
                     </div>
                 </div>
@@ -109,8 +115,7 @@
 
     <script src="../js/stock.js"></script>
     <script src="../js/cargar-productos.js"></script>
-    <script src="../js/aplicar-filtros.js"></script>
     <script src="../js/titleType.js"></script>
-    <script src="../js/item_filtro.js"></script>
+    <script src="../js/filtro.js"></script>
 </body>
 </html>

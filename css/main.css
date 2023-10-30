@@ -239,9 +239,9 @@ body {
   .container-filtros .precio_producto {
     display: flex;
     flex-direction: column;
-    height: 70px;
+    height: 200px;
     gap: 20px; }
-  .container-filtros .opcion_filtro {
+  .container-filtros .inputInvisible {
     display: none; }
   .container-filtros label {
     font-family: 'Montserrat', sans-serif;
@@ -249,8 +249,9 @@ body {
     font-weight: bold;
     color: black;
     cursor: pointer; }
-  .container-filtros .etiqueta-seleccionada {
-    background-color: #4b4b4b;
+  .container-filtros .filtroSeleccionado {
+    transform: translateX(30px);
+    background-color: #535353;
     color: white; }
   .container-filtros h2 {
     font-family: 'Montserrat', sans-serif;

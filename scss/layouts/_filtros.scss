@@ -24,12 +24,11 @@
     .precio_producto{
         display: flex;
         flex-direction: column;
-        height: 70px;
+        height: 200px;
         gap: 20px;
     }
 
-
-    .opcion_filtro{
+    .inputInvisible{
         display: none;
     }
 
@@ -41,9 +40,10 @@
         cursor: pointer;
     }
 
-    .etiqueta-seleccionada{
-        
-        background-color: rgb(75, 75, 75);
+
+    .filtroSeleccionado{
+        transform:translateX(30px); 
+        background-color: rgb(83, 83, 83);
         color: white;
     }
 
