@@ -2,6 +2,12 @@
     display: flex;
     justify-content: center;
     padding: 50px;
+    .container-typing-text{
+        padding: 10px 130px;
+        background-color: rgb(0, 217, 255);
+        clip-path: polygon(100% 0, 94% 51%, 100% 100%, 0% 100%, 6% 52%, 0% 0%);
+
+    }
     .typing-text-animation{
         display: block;
         font-family: monospace;

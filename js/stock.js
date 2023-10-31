@@ -30,7 +30,7 @@ const stock=[
         id:4,
         nombre:"Antora Jacket",
         categoria:"camperas",
-        marca:"northf",
+        marca:"northface",
         precio:70000,
         stock:6,
         img:"https://grimoldimediamanager.grimoldi.com/MediaFiles/Grimoldi/2023/8/3/8671915.jpg"
@@ -76,7 +76,7 @@ const stock=[
         id:9,
         nombre:"Sands",
         categoria:"remeras",
-        marca:"calvin",
+        marca:"calvinKlein",
         precio:35000,
         stock:2,
         img:"https://calvinargentina.vteximg.com.br/arquivos/ids/185505-320-422/J30J320806_AB0_1.jpg?v=638212322543470000"

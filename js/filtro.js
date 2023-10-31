@@ -50,13 +50,20 @@ Array.from(inputs).forEach(input => {
   input.addEventListener('input', ()=>{
 
     const labelRecuperado =input.labels[0];
-    labelRecuperado.classList.add("filtroSeleccionado");
+    
+    const labels = document.querySelectorAll('.filtroSeleccionado');
+    labels.forEach(label => {
+      label.classList.remove('filtroSeleccionado');
+    });
 
 
     if(input.name==="categoria"){
       const valorCategoria = input.value;  
       filter.categoria=valorCategoria;
       mostrarFiltradoStock();
+      if (labelRecuperado !== "all") {
+        labelRecuperado.classList.add("filtroSeleccionado");
+      }
     }
 
     if(input.name==="precioMin"){
@@ -77,8 +84,11 @@ Array.from(inputs).forEach(input => {
       const valorMarca = input.value;
       filter.marca=valorMarca;
       mostrarFiltradoStock();
+      if (labelRecuperado !== "all") {
+        labelRecuperado.classList.add("filtroSeleccionado");
+      }
     }
-    
+
   });
 
 });
