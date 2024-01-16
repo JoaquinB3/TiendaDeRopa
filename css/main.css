@@ -144,7 +144,8 @@ body {
       font-size: 130px;
       border-radius: 2px;
       -webkit-text-stroke: 3px white;
-      font-family: 'IBM Plex Sans Condensed', sans-serif; }
+      font-family: 'IBM Plex Sans Condensed', sans-serif;
+      text-shadow: 5px 5px aqua; }
 
 .slide::after {
   content: "";
@@ -175,7 +176,8 @@ body {
     font-size: 45px;
     width: 41ch;
     animation: typing 2s steps(41), blink 0.5s infinite step-end alternate;
-    overflow: hidden; }
+    overflow: hidden;
+    text-shadow: 1px 3px white; }
 
 @keyframes typing {
   from {
@@ -355,12 +357,38 @@ body {
   height: 270px; }
 
 .double-razor {
-  width: 98%;
+  width: 100%;
   height: 3px;
-  background-color: aqua;
-  margin-left: 1%; }
+  background-color: aqua; }
 
 .container-items {
   width: 100%;
   height: 200px;
-  background-color: rgba(0, 0, 0, 0.719); }
+  background-color: rgba(0, 0, 0, 0.719);
+  display: inline-block;
+  justify-content: center; }
+  .container-items .redes-ft {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    margin-bottom: 15px; }
+    .container-items .redes-ft a {
+      margin: 5px 13px;
+      color: aqua; }
+      .container-items .redes-ft a i {
+        font-size: 30px; }
+      .container-items .redes-ft a:hover {
+        color: white; }
+  .container-items h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    text-shadow: 5px 5px black, 0 0 12px aqua; }
+
+.copy-right {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
