@@ -392,3 +392,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.titles {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; }
+  .titles h2 {
+    font-size: 4rem;
+    text-shadow: 5px 5px aqua; }
