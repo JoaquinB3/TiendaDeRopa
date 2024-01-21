@@ -401,3 +401,66 @@ body {
   .titles h2 {
     font-size: 4rem;
     text-shadow: 5px 5px aqua; }
+
+.new-collection {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+
+#container-collection {
+  display: flex;
+  width: 90%;
+  border: solid 1px aqua;
+  justify-content: space-around;
+  padding: 25px; }
+
+.new-collection-card {
+  width: 250px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 32px 6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 32px 6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 32px 6px rgba(0, 0, 0, 0.75); }
+  .new-collection-card .container-img-new-collection {
+    position: relative;
+    flex: 1; }
+    .new-collection-card .container-img-new-collection .image-wrapper {
+      position: relative;
+      flex: 1;
+      width: 100%; }
+      .new-collection-card .container-img-new-collection .image-wrapper .original-image,
+      .new-collection-card .container-img-new-collection .image-wrapper .hover-image {
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .new-collection-card .container-img-new-collection .image-wrapper .hover-image {
+        opacity: 0;
+        transition: opacity 0.3s ease; }
+      .new-collection-card .container-img-new-collection .image-wrapper:hover .original-image {
+        opacity: 0; }
+      .new-collection-card .container-img-new-collection .image-wrapper:hover .hover-image {
+        opacity: 1; }
+    .new-collection-card .container-img-new-collection i {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 10px;
+      color: aqua; }
+      .new-collection-card .container-img-new-collection i:hover {
+        opacity: 0.5; }
+  .new-collection-card .item-info {
+    display: flex;
+    flex-direction: column; }
+    .new-collection-card .item-info a {
+      display: block; }
+      .new-collection-card .item-info a h3 {
+        padding: 10px 20px 5px 10px;
+        color: black;
+        text-decoration: none; }
+      .new-collection-card .item-info a h4 {
+        padding: 10px 20px 5px 10px;
+        color: black;
+        text-decoration: none; }
