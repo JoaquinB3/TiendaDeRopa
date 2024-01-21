@@ -7,7 +7,10 @@
 #container-collection{
     display: flex;
     width: 90%;
-    border: solid 1px aqua;
+    border-top: 10px double aqua;
+    border-bottom: 10px double aqua;
+    // border: solid 4px aqua;
+    // border-radius: 1.5rem;
     justify-content: space-around;
     padding: 25px;
 }
@@ -68,15 +71,14 @@
         flex-direction: column;
         a{
             display: block;
+            text-decoration: none;
             h3{
                 padding: 10px 20px 5px 10px;
                 color: black;
-                text-decoration: none;
             }
             h4{
                 padding: 10px 20px 5px 10px;
                 color: black;
-                text-decoration: none;
             }
         }
     }    
