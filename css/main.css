@@ -480,11 +480,14 @@ body {
 
 .container-img-dyv {
   width: 600px;
-  height: 350px; }
+  height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+  margin-bottom: 25px; }
 
 .backgroundTitle {
   width: 50%;
   height: 50px;
   background-color: aqua; }
   .backgroundTitle .secundaryTitle {
-    font-size: 4rem; }
+    font-size: 4.2rem; }
