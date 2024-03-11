@@ -4,6 +4,7 @@ function agregarAlCarrito (productoID) {
     const productoCarrito = stock.find(prod => prod.id === productoID);
     if (productoCarrito) {
         carrito.push (productoCarrito);
+        mostrarCarrito();
     }else{
         console.log ("El producto no existe");
     }
@@ -14,6 +15,24 @@ function eliminarDelCarrito (productoID) {
     carrito = nuevoCarrito;
 }
 
+
+function mostrarCarrito(){
+    const mostrarProdCarrito = document.getElementById("productosCarrito");
+    mostrarProdCarrito.innerHTML="";
+    carrito.forEach(item => {
+        const div=document.createElement('div');
+        div.classList.add("prodCarrito");
+        div.innerHTML=`
+            <div class="containerPCarrito">
+                <div class="containerImg"><img src=${item.img}></div>
+                <h3 class="nombrePCarrito">${item.nombre}</h3>
+                <span>$${item.precio}</span>
+                <a href="#" id="cerrarCarrito"><i class="fa-solid fa-trash"></i></a>
+            </div>
+        `
+        mostrarProdCarrito.appendChild(div); 
+    });
+}
 
 
 const todosLosProductos = document.getElementById('container-productos');
@@ -27,7 +46,7 @@ todosLosProductos.addEventListener("click", (e)=>{
         if(productoStockEncontrado){
             const productoId = productoStockEncontrado.id;
             agregarAlCarrito(productoId);
-            console.log (carrito);
+            // console.log (carrito);
         }
     }
 });
@@ -52,7 +71,7 @@ todosLosProductos.addEventListener("click", (e)=>{
 // });
 
 
-function recuperarIdProducto () {
+// function recuperarIdProducto () {
     
-}
+// }
 
