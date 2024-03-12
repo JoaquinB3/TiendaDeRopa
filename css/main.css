@@ -320,15 +320,27 @@ main {
     font-weight: bold;
     font-size: 20px;
     margin: 10px 0px; }
-
-.carritoDesplegable a {
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  color: black; }
-  .carritoDesplegable a:hover {
-    color: red; }
+  .carritoDesplegable .containerPrecio {
+    width: 100%;
+    display: flex; }
+    .carritoDesplegable .containerPrecio p {
+      width: 50%;
+      text-align: end; }
+    .carritoDesplegable .containerPrecio #totalVenta {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      text-align: center;
+      font-weight: bold; }
+  .carritoDesplegable a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: black; }
+    .carritoDesplegable a:hover {
+      color: red; }
 
 #productosCarrito {
   width: 100%; }
@@ -361,12 +373,15 @@ main {
       display: flex;
       align-items: center;
       margin-right: 5px; }
-    .prodCarrito .containerPCarrito a {
+    .prodCarrito .containerPCarrito .containerTacho {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: aqua;
-      width: 15%;
-      margin: auto; }
-      .prodCarrito .containerPCarrito a:hover {
-        color: red; }
+      width: 15%; }
+      .prodCarrito .containerPCarrito .containerTacho i:hover {
+        color: red;
+        cursor: pointer; }
 
 .footer {
   width: 100%;
