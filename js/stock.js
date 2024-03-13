@@ -6,7 +6,8 @@ const stock=[
         marca:"nike",
         precio:50000,
         stock:5,
-        img:"https://nikearprod.vtexassets.com/arquivos/ids/532758-1000-1000?v=1779497815&width=1000&height=1000&aspect=true"
+        img:"https://nikearprod.vtexassets.com/arquivos/ids/532758-1000-1000?v=1779497815&width=1000&height=1000&aspect=true",
+        imgPng:"../assets/img/camperaJordan.png" 
     },
     {   
         id:2,
@@ -15,7 +16,8 @@ const stock=[
         marca:"adidas",
         precio:48000,
         stock:3,
-        img:"https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/e0e3ab3a9d934395843bae8000cb4518_9366/campera-run-icons-3-tiras.jpg"
+        img:"https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/e0e3ab3a9d934395843bae8000cb4518_9366/campera-run-icons-3-tiras.jpg",
+        imgPng:"../assets/img/camperaAdidas.png" 
     },
     {
         id:3,
@@ -24,7 +26,8 @@ const stock=[
         marca:"champions",
         precio:55000,
         stock:4,
-        img:"https://www.tripstore.com.ar/media/catalog/product/cache/25e89759b69d23d0ee436c9ddbb4ede0/I/C/ICHHV74728586N6A-006_0_5.jpg"
+        img:"https://www.tripstore.com.ar/media/catalog/product/cache/25e89759b69d23d0ee436c9ddbb4ede0/I/C/ICHHV74728586N6A-006_0_5.jpg",
+        imgPng:"../assets/img/camperaChampions.png" 
     },
     {
         id:4,
@@ -33,7 +36,8 @@ const stock=[
         marca:"northface",
         precio:70000,
         stock:6,
-        img:"https://grimoldimediamanager.grimoldi.com/MediaFiles/Grimoldi/2023/8/3/8671915.jpg"
+        img:"https://grimoldimediamanager.grimoldi.com/MediaFiles/Grimoldi/2023/8/3/8671915.jpg",
+        imgPng:"https://grimoldimediamanager.grimoldi.com/MediaFiles/Grimoldi/2023/8/3/8671915.jpg" 
     },
     //pantalones
     {
@@ -43,7 +47,8 @@ const stock=[
         marca:"nike",
         precio:30000,
         stock:3,
-        img:"https://nikearprod.vtexassets.com/arquivos/ids/655182-1000-1000?v=638213273600030000&width=1000&height=1000&aspect=true"
+        img:"https://nikearprod.vtexassets.com/arquivos/ids/655182-1000-1000?v=638213273600030000&width=1000&height=1000&aspect=true",
+        imgPng:"../assets/img/pantalonNike.png" 
     },
     {
         id:6,
@@ -52,7 +57,8 @@ const stock=[
         marca:"adidas",
         precio:43000,
         stock:5,
-        img:"https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/b36311c253f8420ebbaeae800080637d_9366/pantalon-adicolor-classics-firebird-primeblue.jpg"
+        img:"https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/b36311c253f8420ebbaeae800080637d_9366/pantalon-adicolor-classics-firebird-primeblue.jpg",
+        imgPng:"../assets/img/pantalonAdidas.png" 
     },
     {
         id:7,
@@ -61,7 +67,8 @@ const stock=[
         marca:"ripcurl",
         precio:25000,
         stock:4,
-        img:"https://www.cristobalcolon.com/fullaccess/item26628foto111627th.jpg"
+        img:"https://www.cristobalcolon.com/fullaccess/item26628foto111627th.jpg",
+        imgPng:"../assets/img/pantalonRC.png" 
     },
     {
         id:8,
@@ -70,7 +77,8 @@ const stock=[
         marca:"vans",
         precio:48000,
         stock:5,
-        img:"https://calvinargentina.vteximg.com.br/arquivos/ids/185505-320-422/J30J320806_AB0_1.jpg?v=638212322543470000"
+        img:"https://calvinargentina.vteximg.com.br/arquivos/ids/185505-320-422/J30J320806_AB0_1.jpg?v=638212322543470000",
+        imgPng:"../assets/img/remeraCK.png"
     },
     {
         id:9,
@@ -79,7 +87,8 @@ const stock=[
         marca:"calvinKlein",
         precio:35000,
         stock:2,
-        img:"https://calvinargentina.vteximg.com.br/arquivos/ids/185505-320-422/J30J320806_AB0_1.jpg?v=638212322543470000"
+        img:"https://calvinargentina.vteximg.com.br/arquivos/ids/185505-320-422/J30J320806_AB0_1.jpg?v=638212322543470000",
+        imgPng:"../assets/img/remeraCK.png" 
     },
     {
         id:10,
@@ -88,7 +97,8 @@ const stock=[
         marca:"adidas",
         precio:20000,
         stock:3,
-        img:"https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/6985a8c5e38b4893b489af0900dd0bda_9366/remera-de-entrenamiento-designed-for-movement-hiit.jpg"
+        img:"https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/6985a8c5e38b4893b489af0900dd0bda_9366/remera-de-entrenamiento-designed-for-movement-hiit.jpg",
+        imgPng:"../assets/img/remeraAdidas.png" 
     },
 ];
 

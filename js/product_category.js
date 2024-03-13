@@ -21,8 +21,9 @@ const categorias=[
 categorias.forEach(item => {
     const div=document.createElement('div');
     div.classList.add("category_card");
+    const url = "http:/html/productos.html?category="+item.name.toLowerCase();
     div.innerHTML=`
-        <a href=${item.url} data-categoria="${item.name}">
+        <a href=${url} data-categoria="${item.name}">
             <img src=${item.img}>
             <h3>${item.name}</h3>
         </a>  
